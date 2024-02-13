@@ -29,6 +29,7 @@ from .models import (
     PatientInvestigation,
     PatientInvestigationGroup,
     PatientRegistration,
+    PatientConsultation,
     Room,
     StaffRoomAllocation,
 )
@@ -199,6 +200,7 @@ admin.site.register(InventoryLog)
 admin.site.register(Ambulance, AmbulanceAdmin)
 admin.site.register(AmbulanceDriver, AmbulanceDriverAdmin)
 admin.site.register(PatientRegistration, PatientAdmin)
+admin.site.register(PatientConsultation)
 admin.site.register(PatientTeleConsultation)
 admin.site.register(PatientSample, PatientSampleAdmin)
 admin.site.register(Disease)

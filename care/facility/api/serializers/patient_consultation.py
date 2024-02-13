@@ -361,6 +361,7 @@ class PatientConsultationSerializer(serializers.ModelSerializer):
         consultation.last_edited_by = self.context["request"].user
         patient = consultation.patient
         last_consultation = patient.last_consultation
+        consultation.last_consultation = last_consultation
         if (
             last_consultation
             and consultation.suggestion == SuggestionChoices.A
